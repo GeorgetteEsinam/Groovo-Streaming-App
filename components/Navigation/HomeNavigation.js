@@ -5,10 +5,10 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Home, Search, LibraryBig } from "lucide-react-native";
-import { PlayerProvider } from "../MainHomeScreens/Mockdata/PlayerContext";
-import MiniPlayer from "../MainHomeScreens/MiniPlayer/MiniPlayer";
-import GenreScreen from "../MainHomeScreens/SearchScreens/PlaylistSong";
-import SearchScreen from "../MainHomeScreens/SearchScreens/GenrePlaylist"; // Ensure SearchScreen is imported
+//import { PlayerProvider } from "../MainHomeScreens/Mockdata/PlayerContext";
+//import MiniPlayer from "../MainHomeScreens/MiniPlayer/MiniPlayer";
+import SearchTab from "../MainHomeScreens/SearchScreens/GenrePlaylist"; // Ensure SearchScreen is imported
+import LibraryTab from "../MainHomeScreens/LibraryTab/Library/Library";
 
 // Dummy Screen Components
 function HomeScreen() {
@@ -19,27 +19,24 @@ function HomeScreen() {
   );
 }
 
+function SearchScreen() {
+  return (
+    <View style={styles.screenContainer}>
+      <SearchTab />
+    </View>
+  );
+}
+
 function LibraryScreen() {
   return (
     <View style={styles.screenContainer}>
-      <Text style={styles.screenText}>Your Library Screen</Text>
+      <LibraryTab />
     </View>
   );
 }
 
 // Navigators
 const Tab = createBottomTabNavigator();
-const Stack = createNativeStackNavigator();
-
-// Nested Search Stack
-function SearchStackScreen() {
-  return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="SearchMain" component={SearchScreen} />
-      <Stack.Screen name="Genre" component={GenreScreen} />
-    </Stack.Navigator>
-  );
-}
 
 // App Root Component
 export default function App() {

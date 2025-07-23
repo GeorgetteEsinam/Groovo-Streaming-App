@@ -11,7 +11,17 @@ import Onboarding2 from './components/Onboarding/Info2'
 import HomeNavigation from './components/Navigation/HomeNavigation'
 import GenrePlaylist from './components/MainHomeScreens/SearchScreens/GenrePlaylist'
 import PlaylistSongs from './components/MainHomeScreens/SearchScreens/PlaylistSong'
-import { PlayerProvider } from './components/MainHomeScreens/Mockdata/PlayerContext';
+import Library from './components/MainHomeScreens/LibraryTab/Library/Library.js';
+import LibraryLikedSongs from './components/MainHomeScreens/LibraryTab/LibraryLikedSongs/LibraryLikedSongs.js'
+import LibraryArtist from './components/MainHomeScreens/LibraryTab/LibraryArtist/LibraryArtist'
+import LibraryPlaylist from './components/MainHomeScreens/LibraryTab/LibraryPlaylist/LibraryPlaylist.js'
+import Download from './components/MainHomeScreens/MainHomeScreens/LibraryTab/LibraryTab/DownloadScreen/Download.js'
+import ProfileScreen from "./components/MainHomeScreens/LibraryTab/ProfileScreen/ProfileScreen.js"
+import SettingsScreen from "./components/MainHomeScreens/LibraryTab/SettingsScreen/SettingsScreen.js"
+import LanguageSelection from "./components/MainHomeScreens/LibraryTab/LanguageSelection/LanguageSelection.js"
+import StreamingQuality from "./components/MainHomeScreens/LibraryTab/StreamingQuality/StreamingQuality.js"
+import LogoutConfirmation from "./components/MainHomeScreens/LibraryTab/LogoutConfirmation/LogoutConfirmation.js"
+//import { PlayerProvider } from './components/MainHomeScreens/Mockdata/PlayerContext';
 
 const Stack = createStackNavigator();
 
@@ -20,7 +30,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator
         initialRouteName="HomeNavigation"
-        screenOptions={{ headerShown: false }} 
+        screenOptions={{ headerShown: false }}
       >
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Register" component={Register} />
@@ -32,6 +42,16 @@ export default function App() {
          <Stack.Screen name="HomeNavigation" component={HomeNavigation} />
          <Stack.Screen name="GenrePlaylist" component={GenrePlaylist} />
          <Stack.Screen name="PlaylistSongs" component={PlaylistSongs} />
+         <Stack.Screen name="Library" component={Library} />
+        <Stack.Screen name="LibraryLikedSongs" component={LibraryLikedSongs} />
+        <Stack.Screen name="LibraryArtist" component={LibraryArtist} />
+        <Stack.Screen name="LibraryPlaylist" component={LibraryPlaylist} />
+        <Stack.Screen name="Download" component={Download} />
+        <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
+        <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
+        <Stack.Screen name="LanguageSelection" component={LanguageSelection} />
+        <Stack.Screen name="StreamingQuality" component={StreamingQuality} />
+        <Stack.Screen name="LogoutConfirmation" component={LogoutConfirmation} />
       </Stack.Navigator>
     </NavigationContainer>
   );
