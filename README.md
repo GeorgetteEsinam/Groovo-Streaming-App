@@ -1,4 +1,4 @@
-# 🎶 Groovo – Dark Mode Music Streaming App
+# 🎶 Groovo – Music Streaming App
 
 Welcome to **Groovo**, a beautifully designed dark mode–only music streaming app built for those who live and breathe music. Whether you're vibing to smooth jazz, getting hyped with hip-hop, or chilling with lo-fi beats, Groovo is your daily music companion.
 
