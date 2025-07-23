@@ -1,9 +1,7 @@
 import "react-native-gesture-handler"; // Must be at the top
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Home, Search, LibraryBig } from "lucide-react-native";
 //import SearchTab from "../MainHomeScreens/SearchScreens/GenrePlaylist"; // Ensure SearchScreen is imported
 import LibraryTab from "../MainHomeScreens/LibraryTab/Library/Library";

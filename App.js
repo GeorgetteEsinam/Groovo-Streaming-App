@@ -9,8 +9,6 @@ import ResetPassword from './components/Authentication/ForgotPassword/ResetPassw
 import Onboarding1 from './components/Onboarding/Info1'
 import Onboarding2 from './components/Onboarding/Info2'
 import HomeNavigation from './components/Navigation/HomeNavigation'
-//import GenrePlaylist from './components/MainHomeScreens/SearchScreens/GenrePlaylist'
-//import PlaylistSongs from './components/MainHomeScreens/SearchScreens/PlaylistSong'
 import Library from './components/MainHomeScreens/LibraryTab/Library/Library.js';
 import LibraryLikedSongs from './components/MainHomeScreens/LibraryTab/LibraryLikedSongs/LibraryLikedSongs.js'
 import LibraryArtist from './components/MainHomeScreens/LibraryTab/LibraryArtist/LibraryArtist'
@@ -21,7 +19,6 @@ import SettingsScreen from "./components/MainHomeScreens/LibraryTab/SettingsScre
 import LanguageSelection from "./components/MainHomeScreens/LibraryTab/LanguageSelection/LanguageSelection.js"
 import StreamingQuality from "./components/MainHomeScreens/LibraryTab/StreamingQuality/StreamingQuality.js"
 import LogoutConfirmation from "./components/MainHomeScreens/LibraryTab/LogoutConfirmation/LogoutConfirmation.js"
-//import { PlayerProvider } from './components/MainHomeScreens/Mockdata/PlayerContext';
 
 const Stack = createStackNavigator();
 
@@ -40,8 +37,6 @@ export default function App() {
          <Stack.Screen name="Onboarding1" component={Onboarding1} />
          <Stack.Screen name="Onboarding2" component={Onboarding2} />
          <Stack.Screen name="HomeNavigation" component={HomeNavigation} />
-         <Stack.Screen name="GenrePlaylist" component={GenrePlaylist} />
-         <Stack.Screen name="PlaylistSongs" component={PlaylistSongs} />
          <Stack.Screen name="Library" component={Library} />
         <Stack.Screen name="LibraryLikedSongs" component={LibraryLikedSongs} />
         <Stack.Screen name="LibraryArtist" component={LibraryArtist} />
