@@ -5,9 +5,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Home, Search, LibraryBig } from "lucide-react-native";
-//import { PlayerProvider } from "../MainHomeScreens/Mockdata/PlayerContext";
-//import MiniPlayer from "../MainHomeScreens/MiniPlayer/MiniPlayer";
-import SearchTab from "../MainHomeScreens/SearchScreens/GenrePlaylist"; // Ensure SearchScreen is imported
+//import SearchTab from "../MainHomeScreens/SearchScreens/GenrePlaylist"; // Ensure SearchScreen is imported
 import LibraryTab from "../MainHomeScreens/LibraryTab/Library/Library";
 
 // Dummy Screen Components
@@ -22,7 +20,7 @@ function HomeScreen() {
 function SearchScreen() {
   return (
     <View style={styles.screenContainer}>
-      <SearchTab />
+      <Text style={styles.screenText}>Search Tab</Text>
     </View>
   );
 }

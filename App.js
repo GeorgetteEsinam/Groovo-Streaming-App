@@ -9,13 +9,13 @@ import ResetPassword from './components/Authentication/ForgotPassword/ResetPassw
 import Onboarding1 from './components/Onboarding/Info1'
 import Onboarding2 from './components/Onboarding/Info2'
 import HomeNavigation from './components/Navigation/HomeNavigation'
-import GenrePlaylist from './components/MainHomeScreens/SearchScreens/GenrePlaylist'
-import PlaylistSongs from './components/MainHomeScreens/SearchScreens/PlaylistSong'
+//import GenrePlaylist from './components/MainHomeScreens/SearchScreens/GenrePlaylist'
+//import PlaylistSongs from './components/MainHomeScreens/SearchScreens/PlaylistSong'
 import Library from './components/MainHomeScreens/LibraryTab/Library/Library.js';
 import LibraryLikedSongs from './components/MainHomeScreens/LibraryTab/LibraryLikedSongs/LibraryLikedSongs.js'
 import LibraryArtist from './components/MainHomeScreens/LibraryTab/LibraryArtist/LibraryArtist'
 import LibraryPlaylist from './components/MainHomeScreens/LibraryTab/LibraryPlaylist/LibraryPlaylist.js'
-import Download from './components/MainHomeScreens/MainHomeScreens/LibraryTab/LibraryTab/DownloadScreen/Download.js'
+import Download from './components/MainHomeScreens/LibraryTab/DownloadScreen/Download'
 import ProfileScreen from "./components/MainHomeScreens/LibraryTab/ProfileScreen/ProfileScreen.js"
 import SettingsScreen from "./components/MainHomeScreens/LibraryTab/SettingsScreen/SettingsScreen.js"
 import LanguageSelection from "./components/MainHomeScreens/LibraryTab/LanguageSelection/LanguageSelection.js"
@@ -29,7 +29,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="HomeNavigation"
+        initialRouteName="Onboarding1"
         screenOptions={{ headerShown: false }}
       >
         <Stack.Screen name="Login" component={Login} />
