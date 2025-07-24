@@ -19,6 +19,11 @@ import SettingsScreen from "./components/MainHomeScreens/LibraryTab/SettingsScre
 import LanguageSelection from "./components/MainHomeScreens/LibraryTab/LanguageSelection/LanguageSelection.js"
 import StreamingQuality from "./components/MainHomeScreens/LibraryTab/StreamingQuality/StreamingQuality.js"
 import LogoutConfirmation from "./components/MainHomeScreens/LibraryTab/LogoutConfirmation/LogoutConfirmation.js"
+import SearchScreen from './screens/SearchScreen';
+import SearchResultsScreen from './screens/SearchResultsScreen';
+import ArtistScreen from './screens/ArtistScreen';
+import AlbumScreen from './screens/AlbumScreen';
+import PlaylistScreen from './screens/PlaylistScreen';
 
 const Stack = createStackNavigator();
 
@@ -47,6 +52,11 @@ export default function App() {
         <Stack.Screen name="LanguageSelection" component={LanguageSelection} />
         <Stack.Screen name="StreamingQuality" component={StreamingQuality} />
         <Stack.Screen name="LogoutConfirmation" component={LogoutConfirmation} />
+        <Stack.Screen name="Search" component={SearchScreen} />
+        <Stack.Screen name="SearchResults" component={SearchResultsScreen} />
+        <Stack.Screen name="Artist" component={ArtistScreen} />
+        <Stack.Screen name="Album"  component={AlbumScreen} />
+        <Stack.Screen name="Playlist" component={PlaylistScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
